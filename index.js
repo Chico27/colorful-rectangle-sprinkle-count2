@@ -44,7 +44,6 @@ function sprinkle(){
     let change_string = chars[3];
     let change_ct = change_string.slice(-1);
     change_ct--;
-    attr.style.background = colorString;
     if (change_ct == 0){
       // console.log(containDisappear)
       if (!containDisappear) {
@@ -54,6 +53,7 @@ function sprinkle(){
       } else {
         // console.log(false)
         attr.classList.remove("box_disappear");
+        attr.style.background = colorString;
       }
       change_ct = having_ct;
     }
